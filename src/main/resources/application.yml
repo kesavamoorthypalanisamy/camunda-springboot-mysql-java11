@@ -1,0 +1,15 @@
+spring:
+ datasource:
+  url: jdbc:mysql://localhost:3306/ACTIVITI
+  username: root
+  password: root
+ logging:
+  path: ./logs/${spring.application.name}
+  file: my-bpm.log
+  
+
+camunda.bpm:
+ database.type: mysql
+ admin-user:
+  id: admin
+  password: admin
